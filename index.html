@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendário de Férias 2025</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h1>Cadastro de Férias</h1>
+            <form id="vacation-form">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" required><br><br>
+
+                <label for="start-date">Data de Início:</label>
+                <input type="date" id="start-date" required><br><br>
+
+                <label for="end-date">Data de Fim:</label>
+                <input type="date" id="end-date" required><br><br>
+
+                <button type="submit">Cadastrar Férias</button>
+            </form>
+        </div>
+
+        <div class="calendar-container">
+            <h1>Calendário 2025</h1>
+
+            <div id="calendar"></div>
+        </div>
+
+        <div id="vacation-report">
+            <h2>Relatório de Férias</h2>
+            <ul id="report-list"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
